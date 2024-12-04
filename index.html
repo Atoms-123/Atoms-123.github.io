@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atomic Watches</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atomic Watches</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:wght" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1 class="title">
-            <span class="red">A</span>
-            <span class="blue">T</span>
-            <span class="yellow">O</span>
-            <span class="green">M</span>
-            <span class="red">I</span>
-            <span class="blue">C</span>
-            <span class="yellow">W</span>
-            <span class="green">A</span>
-            <span class="red">T</span>
-            <span class="blue">C</span>
-            <span class="yellow">H</span>
-            <span class="green">E</span>
-            <span class="red">S</span>
-        </h1>
-        <input type="text" placeholder="Search..." id="search-bar">
-        <button onclick="search()">Search</button>
-        <div id="cart">Cart</div>
-    </header>
-    <main>
-        <div class="coming-soon">
-            <img src="question_mark.png" alt="Coming Soon" class="question-mark">
-            <p>
-                Coming on 1st of January<br>
-                Price: ₹1649 on Mega Offer
-            </p>
-        </div>
-        <div id="search-results"></div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Atomic Watches</p>
-    </footer>
-    <script src="script.js"></script>
+  <header>
+    <h1 class="title">
+      <span class="red">A</span>
+      <span class="blue">T</span>
+      <span class="yellow">O</span>
+      <span class="green">M</span>
+      <span class="red">I</span>
+      <span class="blue">C</span>
+      <span class="yellow">W</span>
+      <span class="green">A</span>
+      <span class="red">T</span>
+      <span class="blue">C</span>
+      <span class="yellow">H</span>
+      <span class="green">E</span>
+      <span class="red">S</span>
+    </h1>
+    <input type="text" placeholder="Search..." id="search-bar" onfocus="showOptions()">
+    <div class="search-options" id="search-options"></div>
+    <button onclick="search()">Search</button>
+    <button onclick="showContact()" id="contact-btn">Contact</button>
+  </header>
+  <div id="cart">Cart</div>
+  <main>
+    <div id="contact-info"></div>
+    <div class="coming-soon">
+      <img src="question_mark.png" alt="Coming Soon">
+      <p class="question-mark">
+        <br>
+        Coming on 1st of January
+        <br>
+        Price: ₹1649 on Mega Offer
+      </p>
+    </div>
+  </main>
+  <div id="search-results"></div>
+  <footer>
+    <p>&copy; 2024 Atomic Watches</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
