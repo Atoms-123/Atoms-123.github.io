@@ -3,39 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atomic Watches</title>
+    <title>ATOMIC WATCHES</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" 
+        rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="top-bar">
             <h1 class="logo">
-                <span class="colorl">A</span><span class="color">tomic Watches</span>
+                ATOMIC WATCHES
             </h1>
             <div class="search-bar">
-                <input type="text" placeholder="Search..." id="search-bar" class="search-input">
+                <input 
+                    type="text" 
+                    placeholder="Search..." 
+                    id="search-bar" 
+                    onfocus="showOptions()">
                 <button onclick="search()">Search</button>
-                <button onclick="showContact()" id="contact-btn">Contact</button>
+                <button 
+                    onclick="showContact()" 
+                    id="contact-btn">
+                    Contact
+                </button>
             </div>
-            <div id="cart">Cart</div>
+        </div>
+        <div id="cart-container">
+            <button 
+                onclick="showCart()" 
+                id="cart">
+                Cart
+            </button>
         </div>
     </header>
+
     <main>
         <div id="contact-info"></div>
+        <div id="cart-info"></div>
         <div class="banner">
-            <img src="banner.jpg" alt="End of Season Sale">
-            <p>Coming on 1st of January<br>Price: ₹1649 on Mega Offer</p>
-        </div>
-        <div class="category-icons">
-            <button onclick="navigateTo('smartwatches.html')">Smartwatches</button>
-            <button onclick="navigateTo('earbuds.html')">Earbuds</button>
+            <img 
+                src="question_mark.png" 
+                alt="Coming Soon">
+            <p>
+                Coming on 1st of January
+                <br>
+                Price: ₹1649 on Mega Offer
+            </p>
         </div>
         <div id="search-results"></div>
     </main>
+
     <footer>
-        <p>&copy; 2024 Atomic Watches</p>
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How can I make a payment?</h3>
+                <p>
+                    Cash on delivery and contact the email given in 
+                    the contact option.
+                </p>
+            </div>
+        </div>
+        <p>&copy; 2024 ATOMIC WATCHES</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
