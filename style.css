@@ -1,56 +1,49 @@
 body {
     font-family: 'Playfair Display', serif;
-    background-color: #F0FFFB; /* Body background color */
+    background-color: #f0f4f8; /* Body background color */
     color: #333;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-/* Header styles */
 header {
-    background-color: #ffffff; /* Header background color */
+    background-color: #000; /* Black background for header */
     padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-/* Logo styles */
 .logo {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    background-color: #000000; /* Background color for Atomic Watches title */
+    color: #fff; /* White color for the text */
+    background-color: #000; /* Ensure background is black to make white text clear */
     padding: 0.5rem;
     border-radius: 5px;
 }
 
-.colorl {
-    color: #ffffff; /* White color for the first part of the logo */
-}
-
-.color {
-    color: #3cb44b; /* Green color for the second part of the logo */
-}
-
-/* Search bar styles */
 .search-bar {
     display: flex;
     align-items: center;
+    flex: 1;
+    justify-content: space-between;
 }
 
 #search-bar {
-    width: 300px;
+    width: 50%;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 0.5rem;
-    background-color: #f1f1f1; /* Search bar background color */
+    background-color: #fff; /* Search bar background color */
 }
 
 button {
     padding: 0.5rem 1rem;
-    background-color: #34A853; /* Default button color */
+    background-color: #34A853;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -59,49 +52,29 @@ button {
 }
 
 button:hover {
-    background-color: #8f9058; /* Hover effect for buttons */
+    background-color: #0f9d58;
 }
 
 #contact-btn {
-    background-color: #607BFF; /* Different color for the contact button */
+    background-color: #007BFF; /* Different color for contact button */
 }
 
 #cart {
-    margin-left: 1rem;
-    font-size: 1.2rem;
+    background-color: #FF5722; /* Orange color for cart button */
 }
 
-/* Banner styles */
 .banner {
     text-align: center;
     margin: 2rem 0;
-    background-color: #4640F0; /* Banner background color */
+    background-color: #f4b400; /* Banner background color */
     padding: 1rem;
     border-radius: 5px;
 }
 
-/* Category icons */
-.category-icons {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0;
-}
-
-.category-icons button {
-    background-color: #4285F4;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Contact info */
-#contact-info {
+#contact-info, #cart-info {
     display: none;
-    font-size: 1rem;
-    color: #0078FF;
+    font-size: 1.5rem;
+    color: #007BFF;
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 5px;
@@ -109,35 +82,31 @@ button:hover {
     text-align: center;
 }
 
-/* Footer styles */
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.9); /* Footer background color */
+    background-color: rgba(255, 255, 255, 0.8); /* Footer background color */
 }
 
-/* Animations */
+.faq {
+    text-align: left;
+    margin: 2rem 0;
+}
+
+.faq-item {
+    margin: 1rem 0;
+}
+
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes slideIn {
-    from {
-        transform: translateY(50px);
-    }
-    to {
-        transform: translateY(0);
-    }
+    from { transform: translateY(50px); }
+    to { transform: translateY(0); }
 }
 
-/* Example for applying animations */
-.coming-soon,
-.search-options,
-.product-list {
+.coming-soon, .search-options, .product-list {
     animation: fadeIn 0.7s ease-in-out, slideIn 0.7s ease-in-out;
 }
