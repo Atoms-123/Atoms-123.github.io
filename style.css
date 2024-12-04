@@ -1,36 +1,29 @@
 body {
     font-family: 'Playfair Display', serif;
-    background-color: #f9f9f9;
+    background-color: #f6f4f8; /* Body background color */
     color: #333;
 }
 
 header {
     text-align: center;
     padding: 1rem;
-    background-color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.8); /* Header background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
 .title {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    background-color: #f4b400; /* Background color for Atomic Watches title */
+    padding: 5px;
+    border-radius: 5px;
 }
 
-.title .red {
-    color: #DB4437;
-}
-
-.title .blue {
-    color: #4285F4;
-}
-
-.title .yellow {
-    color: #F4B400;
-}
-
-.title .green {
-    color: #0F9D58;
-}
+.title .red { color: #d44a37; }
+.title .blue { color: #4285f4; }
+.title .yellow { color: #f4b400; }
+.title .green { color: #0b8043; }
 
 #search-bar {
     width: 50%;
@@ -38,37 +31,81 @@ header {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 1rem;
+    background-color: #f1f1f1; /* Search bar background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
-button {
+#contact-btn {
     padding: 0.5rem 1rem;
-    background-color: #34A853;
+    background-color: #34a853;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-btn:hover {
+    background-color: #0f9d58;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #34a853;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #0f9d58;
 }
 
+.search-options {
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.search-options button {
+    background-color: #4285f4;
+    margin: 0.2rem;
+    color: #fff;
+}
+
 .coming-soon {
     text-align: center;
     margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.contact-info {
+    display: none;
+    font-size: 1.5rem;
+    color: #4285f4;
+    margin: 1rem;
+    background-color: #f4b400;
+    border-radius: 5px;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.8); /* Footer background color */
 }
 
 .coming-soon, .search-options, .product-list {
-    animation: fadeInOut 0.5s ease-in-out;
+    animation: fadeIn 0.7s ease-in-out, slideIn 0.7s ease-in-out;
 }
 
-@keyframes fadeInOut {
-    0%, 100% { opacity: 0; }
-    50% { opacity: 1; }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(50px); }
+    to { transform: translateY(0); }
 }
