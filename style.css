@@ -25,8 +25,13 @@ header {
     border-radius: 5px;
 }
 
-.colorl { color: #e6194b; } /* Example color 1 */
-.color { color: #3cb44b; } /* Example color 2 */
+.colorl {
+    color: #ffffff; /* White color for the first part of the logo */
+}
+
+.color {
+    color: #3cb44b; /* Green color for the second part of the logo */
+}
 
 /* Search bar styles */
 .search-bar {
@@ -45,7 +50,7 @@ header {
 
 button {
     padding: 0.5rem 1rem;
-    background-color: #34A853;
+    background-color: #34A853; /* Default button color */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -54,11 +59,11 @@ button {
 }
 
 button:hover {
-    background-color: #8f9058;
+    background-color: #8f9058; /* Hover effect for buttons */
 }
 
 #contact-btn {
-    background-color: #607BFF; /* Different color for contact button */
+    background-color: #607BFF; /* Different color for the contact button */
 }
 
 #cart {
@@ -113,16 +118,26 @@ footer {
 
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideIn {
-    from { transform: translateY(50px); }
-    to { transform: translateY(0); }
+    from {
+        transform: translateY(50px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 /* Example for applying animations */
-.coming-soon, .search-options, .product-list {
+.coming-soon,
+.search-options,
+.product-list {
     animation: fadeIn 0.7s ease-in-out, slideIn 0.7s ease-in-out;
 }
