@@ -5,69 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATOMIC WATCHES</title>
     <link rel="stylesheet" href="style.css">
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" 
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <h1 class="logo">
-                ATOMIC WATCHES
-            </h1>
-            <div class="search-bar">
-                <input 
-                    type="text" 
-                    placeholder="Search..." 
-                    id="search-bar" 
-                    onfocus="showOptions()">
-                <button onclick="search()">Search</button>
-                <button 
-                    onclick="showContact()" 
-                    id="contact-btn">
-                    Contact
-                </button>
-            </div>
-        </div>
-        <div id="cart-container">
-            <button 
-                onclick="showCart()" 
-                id="cart">
-                Cart
-            </button>
-        </div>
+    <header class="header">
+        <h1>Welcome to ATOMIC WATCHES</h1>
     </header>
-
-    <main>
-        <div id="contact-info"></div>
-        <div id="cart-info"></div>
-        <div class="banner">
-            <img 
-                src="question_mark.png" 
-                alt="Coming Soon">
-            <p>
-                Coming on 1st of January
-                <br>
-                Price: ₹1649 on Mega Offer
-            </p>
+    <div class="search-bar">
+        <input type="text" placeholder="Search..." id="search-bar">
+        <img src="cart-icon.png" alt="Cart" onclick="navigateTo('cart.html')" class="animated-button">
+    </div>
+    <div class="products">
+        <h2>Our Products</h2>
+        <div class="product-item">
+            <h3>1. Atomic's Atom 1</h3>
+            <img src="gift-box.png" alt="Atomic's Atom 1" class="animated-button">
         </div>
-        <div id="search-results"></div>
-    </main>
-
-    <footer>
-        <div class="faq">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <h3>How can I make a payment?</h3>
-                <p>
-                    Cash on delivery and contact the email given in 
-                    the contact option.
-                </p>
-            </div>
-        </div>
+    </div>
+    <footer class="footer">
         <p>&copy; 2024 ATOMIC WATCHES</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
