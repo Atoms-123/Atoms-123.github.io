@@ -23,7 +23,7 @@ function showProducts(category) {
 function showContact() {
     const contactInfo = document.getElementById('contact-info');
     contactInfo.innerHTML = `
-        <p>Please contact us at: <a href="mailto:atomic@example.com">atomic@example.com</a></p>
+        <p>Please contact us at: <a href="mailto:atomic@example.com">atomicwatches123@gmail.com</a></p>
     `;
     contactInfo.style.display = 'block';
 }
