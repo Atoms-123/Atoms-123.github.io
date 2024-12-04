@@ -1,42 +1,74 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+    font-family: 'Playfair Display', serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #4285F4;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
 }
 
-.logo {
-  height: 50px;
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.title .red {
+    color: #DB4437;
+}
+
+.title .blue {
+    color: #4285F4;
+}
+
+.title .yellow {
+    color: #F4B400;
+}
+
+.title .green {
+    color: #0F9D58;
 }
 
 #search-bar {
-  width: 50%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+    width: 50%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
 button {
-  padding: 0.5rem 1rem;
-  background-color: #34A853;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: #34A853;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: #0f9d58;
+    background-color: #0f9d58;
 }
 
 .coming-soon {
-  text-align: center;
-  margin: 2rem 0;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+}
+
+.coming-soon, .search-options, .product-list {
+    animation: fadeInOut 0.5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
 }
