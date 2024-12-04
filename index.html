@@ -1,75 +1,41 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Atomic Watches</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display: we
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomic Watches</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
-
 <body>
-
-<header>
-
-<div class="top-bar">
-
-<h1 class="logo"><span class="colorl">A</span><span class="color
-
-< div class="search-bar">
-
-<input type="text" placeholder="Search..." id="search-bar" c
-
-<button onclick="search()">Search</button>
-
-<button onclick="showContact()" id="contact-btn">Contact</bl
-
-</div>
-
-<div id="cart">Cart</div>
-
-</div>
-
-</header>
-
-<main>
-
-<div id="contact-info"></div>
-
-<div class="banner">
-
-<img src="banner.jpg" alt="End of Season Sale"> <p>Coming on 1st of January<br>Price: ₹1649 on Mega Offer</p>
-
-</div>
-
-<div class="category-icons">
-
-<button onclick="navigateTo('smartwatches.html')">Smartwatches</
-
-<button onclick="navigateTo('earbuds.html')">Earbuds</button>
-
-</div>
-
-<div id="search-results"></div>
-
-</main>
-
-<footer>
-
-<p>&copy; 2024 Atomic Watches</p>
-
-</footer>
-
-<script src="script.js"></script>
-
+    <header>
+        <div class="top-bar">
+            <h1 class="logo">
+                <span class="colorl">A</span><span class="color">tomic Watches</span>
+            </h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." id="search-bar" class="search-input">
+                <button onclick="search()">Search</button>
+                <button onclick="showContact()" id="contact-btn">Contact</button>
+            </div>
+            <div id="cart">Cart</div>
+        </div>
+    </header>
+    <main>
+        <div id="contact-info"></div>
+        <div class="banner">
+            <img src="banner.jpg" alt="End of Season Sale">
+            <p>Coming on 1st of January<br>Price: ₹1649 on Mega Offer</p>
+        </div>
+        <div class="category-icons">
+            <button onclick="navigateTo('smartwatches.html')">Smartwatches</button>
+            <button onclick="navigateTo('earbuds.html')">Earbuds</button>
+        </div>
+        <div id="search-results"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Atomic Watches</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
