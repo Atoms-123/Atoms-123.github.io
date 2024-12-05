@@ -2,8 +2,11 @@ function navigateTo(page) {
     window.location.href = page;
 }
 
-function showMessage() {
+function toggleMessage() {
     const messageDiv = document.getElementById('message');
-    messageDiv.innerText = "Have patience, my dear friend, and wait for it to launch";
-    messageDiv.style.display = "block";
+    if (messageDiv.style.display === "none" || messageDiv.style.display === "") {
+        messageDiv.style.display = "block";
+    } else {
+        messageDiv.style.display = "none";
+    }
 }
