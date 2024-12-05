@@ -2,7 +2,7 @@ body {
     font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
-    background-color: #FFFBEA; /* Updated background color */
+    background-color: #FFFBEA;
 }
 
 .header {
@@ -95,7 +95,7 @@ body {
 }
 
 .made-in-bharat {
-    background-color: #000; /* Extend black background */
+    background-color: #000;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -111,11 +111,6 @@ body {
 
 .green {
     color: green;
-}
-
-.word-spacing {
-    display: inline-block;
-    width: 20px; /* Adjust the width as needed for spacing */
 }
 
 .animated-button {
