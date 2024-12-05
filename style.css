@@ -101,10 +101,6 @@ body {
     text-align: center;
 }
 
-.tricolor {
-    font-weight: bold;
-}
-
 .orange {
     color: orange;
 }
@@ -115,6 +111,11 @@ body {
 
 .green {
     color: green;
+}
+
+.word-spacing {
+    display: inline-block;
+    width: 20px; /* Adjust the width as needed for spacing */
 }
 
 .animated-button {
