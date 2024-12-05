@@ -2,7 +2,7 @@ body {
     font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
-    background-color: #FFFBEA; /* Updated background color */
+    background-color: #FFFBEA;
 }
 
 .header {
@@ -26,14 +26,14 @@ body {
     margin-right: 10px;
 }
 
-.search-bar .search-icon {
+.search-bar .search-icon, .search-bar .telephone-icon {
     width: 24px;
     height: 24px;
     margin-right: 10px;
 }
 
 .search-bar input {
-    width: 65%;
+    width: 60%;
     padding: 10px;
     font-size: 16px;
 }
@@ -44,7 +44,7 @@ body {
     cursor: pointer;
 }
 
-.products, .cart {
+.products, .cart, .content {
     padding: 20px;
     text-align: center;
 }
@@ -118,4 +118,29 @@ body {
     to {
         opacity: 1;
     }
+}
+
+.logo-large {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.home-button {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background-color: #333;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
 }
